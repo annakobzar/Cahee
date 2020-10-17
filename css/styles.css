@@ -100,7 +100,7 @@ body {
 
 .header__content {
   /* margin-bottom: 300px; */
-  margin-bottom: 30vh;
+  margin-bottom: 15vh;
 }
 
 .header__title {
@@ -130,8 +130,8 @@ body {
   transition: all 0.5s;
 }
 
-.button__orange:hover {
-  color: #f72b3b;
+.button:hover {
+  color: var(--color-orange);
   background: #fff;
 }
 
