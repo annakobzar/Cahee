@@ -569,6 +569,12 @@ body {
   font-weight: 700;
 }
 
+.field input:focus::-ms-input-placeholder,
+.field textarea:focus::-ms-input-placeholder {
+  /* color: #fff; */
+  display: inline;
+}
+
 .field input::placeholder,
 .field textarea::placeholder {
   color: #fff;
@@ -628,4 +634,141 @@ body {
 
 .footer__author--red {
   color: #f12b55;
+}
+
+/* IE */
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body {
+    font-family: "Raleway", sans-serif;
+    color: #262626;
+  }
+
+  .logo {
+    font-family: "Pacifico", cursive;
+    color: #262626;
+    width: 100%;
+  }
+
+  .logo:hover {
+    color: #b07cf7;
+    transform: none;
+  }
+
+  .menu__link {
+    color: #262626;
+    transition: all 0.5s;
+  }
+
+  .menu__link:hover {
+    border-top-color: #ff6033;
+  }
+
+  .button--orange {
+    background: #ff6033;
+  }
+
+  .button:hover {
+    color: #ff6033;
+  }
+
+  .title,
+  .blog_title,
+  .contact_title {
+    font-family: "Raleway", sans-serif;
+  }
+
+  .about__info {
+    margin-top: 200px;
+  }
+
+  .services {
+    background: #70bfff;
+  }
+
+  .services__list {
+    margin: 200px 0 200px 100px;
+  }
+
+  .services__img::before {
+    background: #b9b9b9;
+    top: 0;
+  }
+
+  .services__item:hover .services__img {
+    color: #96b92c;
+  }
+
+  .button--blue {
+    background: #355b82;
+  }
+
+  .button--blue:hover {
+    color: #355b82;
+  }
+
+  .subscribe__field {
+    border: 1px solid #262626;
+  }
+
+  .subscribe__input {
+    font-family: "Raleway", sans-serif;
+  }
+
+  .button--green {
+    background: #96b92c;
+    color: #fff;
+  }
+
+  .button--green:hover {
+    background: #fff;
+    color: #96b92c;
+  }
+
+  .blog {
+    background: #b07cf7;
+  }
+
+  .field input,
+  .field textarea {
+    font-family: "Raleway", sans-serif;
+  }
+
+  .submit {
+    font-family: "Raleway", sans-serif;
+  }
+
+  .contact_submit {
+    background: #96b92c;
+    color: #fff;
+  }
+
+  .contact_submit:hover {
+    background: #355b82;
+    color: #fff;
+  }
+
+  .post_date,
+  .post_day,
+  .post_title,
+  .post_author {
+    font-family: "Raleway", sans-serif;
+  }
+
+  .contact_type {
+    font-family: "Raleway", sans-serif;
+  }
+
+  .contact_data a {
+    color: currentColor;
+  }
+
+  .footer__wrapper {
+    text-align: center;
+  }
+
+  .rights,
+  .footer__author {
+    width: 45%;
+  }
 }
