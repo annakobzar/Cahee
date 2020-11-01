@@ -21,27 +21,35 @@
     <header class="header">
       <div class="container">
         <nav class="header__nav">
-          <a class="logo" href="#">Cahee</a>
-          <ul class="menu">
-            <li class="menu__item">
-              <a class="menu__link" href="#">Home</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#about">About</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#services">Services</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#gallery">Gallery</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#blog">Blog</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#contact">Contact</a>
-            </li>
-          </ul>
+          <div class="header__nav-wrap">
+            <a class="logo" href="#">Cahee</a>
+
+            <input type="checkbox" id="burger" class="burger" checked />
+            <label for="burger" class="burger__label">
+              <span class="burger__line"></span>
+            </label>
+
+            <ul class="menu">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#about">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#services">Services</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#gallery">Gallery</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#blog">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <div class="header__content">
           <h1 class="header__title">Fresh Life</h1>
@@ -56,11 +64,9 @@
           </div>
           <a class="button button--orange" href="#">Get free now</a>
         </div>
-        <div class="header__scroll">
-          <a class="scroll" href="#footer">
-            <img src="images/scroll.png" alt="scroll" class="scroll__img" />
-          </a>
-        </div>
+        <a class="scroll" href="#about">
+          <img src="images/scroll.png" alt="scroll" class="scroll__img" />
+        </a>
       </div>
     </header>
 
