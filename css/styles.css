@@ -48,7 +48,7 @@ body {
 .header {
   min-height: 100vh;
   background: fixed url(../images/header_bg.jpg) no-repeat center center;
-  background-size: cover;
+  background-size: auto;
   color: var(--color-dark_grey);
   padding-bottom: 1px;
   position: relative;
@@ -442,6 +442,7 @@ body {
 }
 
 .gallery__img {
+  display: block;
   width: 100%;
   min-height: 100%;
   transition: all 0.3s;
@@ -622,7 +623,8 @@ body {
 
 .contact {
   min-height: 865px;
-  background: fixed url(../images/contact_bg.jpg) center center/cover no-repeat;
+  background: fixed url(../images/contact_bg.jpg) center center no-repeat;
+  background-size: auto;
   color: var(--color-dark_grey);
   padding-top: 100px;
 }
